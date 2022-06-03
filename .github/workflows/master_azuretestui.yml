@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'azuretestui'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_43153081A6CA480D8DA10D7C6FCD8D10 }}
-          package: .
+          package: ./dist/azuretestui
